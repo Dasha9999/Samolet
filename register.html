@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #c7b39b url(imagess/sky.jpg);
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 ALIGN=CENTER>Регистрация на рейс</h1>
+    <p>Поля, отмеченные *, обязательны для заполнения!</p>
+    <hr>
+
+    <label for="Фамилия"><b>Фамилия*</b></label>
+    <input type="text" placeholder="Введите Вашу Фамилию" name="Фамилия" required>
+
+    <label for="Имя"><b>Имя*</b></label>
+    <input type="text" placeholder="Введите Ваше полное Имя" name="Имя" required>
+
+    <label for="Отчество"><b>Отчество*</b></label>
+    <input type="text" placeholder="Введите Ваше Отчество (при наличии)" name="Отчество" required>
+
+    <label for="Дата рождения"><b>Дата рождения*</b></label>
+    <input type="text" placeholder="ДД.ММ.ГГГГ" name="Дата рождения" required>
+
+    <label for="Паспортные данные"><b>Паспортные данные*</b></label>
+    <input type="text" placeholder="Введите серию и номер паспорта (хх хх хххххх)" name="Паспортные данные" required>
+
+    <label for="Номер телефона"><b>Номер телефона*</b></label>
+    <input type="text" placeholder="+7(ххх)ххх-хх-хх" name="Номер телефона" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введи адрес Вашей электронной почты" name="email" required>
+
+    <label for="Откуда вылет"><b>Откуда вылет*</b></label>
+    <select style="width: 100%; height: 50px; margin: 5px 0 22px 0">
+    <option value=""> Москва </option>
+    <option value=""> Санкт-Петербург </option>
+    <option value=""> Владивосток </option>
+    <option value=""> Сочи </option>
+    <option value=""> Пермь </option>
+    <option value=""> Краснодар </option>
+    <option value=""> Уфа </option>
+    <option value=""> Ярославль </option>
+    </select>
+
+    <label for="Куда прилет"><b>Куда прилет*</b></label>
+    <select style="width: 100%; height: 50px; margin: 5px 0 22px 0">
+    <option value=""> Санкт-Петербург </option>
+    <option value=""> Москва </option>
+    <option value=""> Владивосток </option>
+    <option value=""> Сочи </option>
+    <option value=""> Пермь </option>
+    <option value=""> Краснодар </option>
+    <option value=""> Уфа </option>
+    <option value=""> Ярославль </option>
+    </select>
+
+    <label for="Дата полета"><b>Дата полета*</b></label>
+    <input type="date" id="date" name="Дата полета" required>
+
+    <button type="submit" class="registerbtn">Зарегистрироваться</button>
+    </div>
+  
+    <hr>
+    <p>Телефон для связи: 8(812)123-45-67</p>
+    <p>Email:polet.samolet@gmail.ru</p>
+ 
+</form>
+
+</body>
+</html>
